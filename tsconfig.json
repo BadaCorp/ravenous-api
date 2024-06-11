@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
+    "target": "es2021",
     "lib": ["es6"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "module": "CommonJS"
-  }
+  },
+  "include": ["/**/*.ts"],
+  "exclude": ["node_modules"]
 }
