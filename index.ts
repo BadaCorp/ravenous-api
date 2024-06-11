@@ -1,9 +1,10 @@
 require("dotenv").config();
-const express = require("express");
+import express = require("express");
+import cors = require("cors");
+import yelp = require("./routes/yelp");
+
 const app = express();
 const port = process.env.PORT || 8080;
-const cors = require("cors");
-const yelp = require("./routes/yelp.ts");
 
 const corsOptions = {
   origin: [

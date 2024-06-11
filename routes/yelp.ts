@@ -1,6 +1,7 @@
-const express = require("express");
-const router = express.Router();
+import express = require("express");
 import yelpAPI from "../controllers";
+
+const router = express.Router();
 
 router.get("/", yelpAPI.getBusinesses);
 
