@@ -5,4 +5,4 @@ const router = express.Router();
 
 router.get("/", yelpAPI.getBusinesses);
 
-module.exports = router;
+export default router;

@@ -1,7 +1,7 @@
 require("dotenv").config();
-import express = require("express");
-import cors = require("cors");
-import yelp = require("./routes/yelp");
+import express from "express";
+import cors from "cors";
+import router from "./routes/yelp";
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -16,7 +16,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use("/yelp", yelp);
+app.use("/yelp", router);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
