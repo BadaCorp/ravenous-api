@@ -9,7 +9,7 @@ const port = process.env.PORT || 8080;
 const corsOptions = {
   origin: [
     "http://localhost:3000",
-    "https://ravenous-guide.netlify.app/",
+    "https://ravenous-guide.netlify.app",
   ],
   optionsSuccessStatus: 200,
 };
